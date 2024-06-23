@@ -10,6 +10,7 @@ Suite *suite_s21_memset(void);
 Suite *suite_s21_strchr(void);
 Suite *suite_s21_strncat(void);
 Suite *suite_s21_strlen(void);
+Suite *suite_s21_strerror(void);
 
 void run_tests(void);
 void run_suite(Suite *suitecase);
