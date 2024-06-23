@@ -1,4 +1,5 @@
 #include <locale.h>
+#include <stdio.h>
 
 #include "s21_string_tests.h"
 
@@ -9,9 +10,7 @@ int main(void) {
 }
 
 void run_tests(void) {
-  Suite *list_suites[] = {suite_s21_memset(),   suite_s21_strchr(),
-                          suite_s21_strlen(),   suite_s21_strncat(),
-                          suite_s21_strerror(), NULL};
+  Suite *list_suites[] = {suite_s21_strerror(), NULL};
 
   for (Suite **current_suite = list_suites; *current_suite != NULL;
        current_suite++) {
